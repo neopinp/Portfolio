@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background: black;
+}
+/* CONTAINS BOTH CANVAS AND BUTTONS */
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+/* FALLING TEXT BACKGROUND */
+.matrix {
+  position: absolute;
+  white-space: nowrap;
+  animation: fall 1s linear infinite;
+}
+canvas {
+  position: absolute; /* MAKE CANVAS A BACKGROUND LAYER */
+  top: 0;
+  left: 0;
+  z-index: 0; /* PUSH CANVAS TO BACKGROUND - 3D ABILITY*/
+}
+
+/* PILLS */
+.pill {
+  position: absolute;
+  z-index: 1; /* In front of canvas */
+  width: 100px;
+  height: 50px;
+  border-radius: 25px;
+  border: none;
+}
+.pill:hover {
+  transform: scale(1.1);
+}
+.pill.blue {
+  background-color: blue;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+.pill.red {
+  background-color: red;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+}
