@@ -10,11 +10,7 @@ body {
   height: 100vh;
 }
 /* FALLING TEXT BACKGROUND */
-.matrix {
-  position: absolute;
-  white-space: nowrap;
-  animation: fall 1s linear infinite;
-}
+
 canvas {
   position: absolute; /* MAKE CANVAS A BACKGROUND LAYER */
   top: 0;
@@ -23,26 +19,49 @@ canvas {
 }
 
 /* PILLS */
-.pill {
+.pill-container {
   position: absolute;
-  z-index: 1; /* In front of canvas */
-  width: 100px;
-  height: 50px;
-  border-radius: 25px;
-  border: none;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0; /* ON LOAD STAY HIDDEN */
+  visibility: hidden;
+  transition: opacity 3s ease;
 }
-.pill:hover {
-  transform: scale(1.1);
+
+.pill-container.visible {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 3s ease;
 }
-.pill.blue {
-  background-color: blue;
+.pill-container.blue {
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+}
+.pill-container.red {
   top: 50%;
   left: 40%;
   transform: translate(-50%, -50%);
 }
-.pill.red {
-  background-color: red;
-  top: 50%;
-  left: 60%;
-  transform: translate(-50%, -50%);
+
+.pill-container img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.2s ease;
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+  transition: all 0.2s ease;
+  border-radius: 100px;
+}
+.pill-container:hover img {
+  transform: scale(1.4);
+  transition: transform 0.2s ease;
+  box-shadow: 0 0 30px rgba(0, 255, 0, 0.8); /* Stronger glow on hover */
+  transform: scale(1.1); /* Optional scaling effect */
+  opacity: 1;
+  filter: brightness(1) contrast(1.5); /* Enhance visibility */
 }

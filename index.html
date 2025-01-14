@@ -1,19 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>NEO</title>
-  <link rel="stylesheet" href="styles\introPage.css" />
-</head>
-<body>
-  <div class="container">
-    <!-- CANVAS FOR FALLING TEXT -->
-    <canvas id="matrix"></canvas>
-        <!-- BUTTONS FOR PILLS  -->
-    <button class="pill blue" onclick="blackOut()"></button>
-    <button class="pill red" onclick="goToPortfolio()"></button>
-  </div>
+  <head>
+    <title>NEO</title>
+    <link rel="stylesheet" href="styles\introPage.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- CANVAS FOR FALLING TEXT -->
+      <canvas id="matrix"></canvas>
+      <!-- BUTTONS FOR PILLS  -->
+      <div class="pill-container blue" onclick="takeBluePill()">
+        <img src="assets\bluepill.png"/>
+      </div>
 
-  <script src="scripts\introPage.js"></script>
-</body>
+      <div class="pill-container red" onclick="takeRedPill()">
+        <a href="red-pill-page.html"             onclick="takeRedPill()"
+        >
+          <img
+            src="assets\redpill.png"
+          />
+        </a>
+      </div>
+    </div>
+
+    <script src="scripts\introPage.js"></script>
+  </body>
 </html>
-

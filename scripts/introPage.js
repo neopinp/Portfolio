@@ -45,18 +45,21 @@ function drawMatrix() {
 }
 
 /* PILL FUNCTIONS */
-function blackOut() {
-  // Add div element to cover the screen
-  const blackout = document.createElement("div");
-  blackout.classList.add("blackOut");
-  document.body.appendChild(blackout);
-
-  // An option to reverse blackout / Reverse blue pill decision
-  blackout.addEventListener("click", function () {
-    document.body.removeChild(blackout);
-  });
+function takeBluePill() { // REMOVES OPTION TO TAKE PILLS
+    const pills = document.querySelectorAll('.pill-container');
+    pills.forEach(pill => {
+        pill.classList.remove('visible');
+    })
 }
 
-function goToPortfolio() {
+function takeRedPill() {
   // Add functionality for portfolio navigation if needed
 }
+
+function showPills() {
+    const pills = document.querySelectorAll('.pill-container')
+    pills.forEach(pill => {
+        pill.classList.add('visible')
+    });
+}
+setTimeout(showPills, 5000);
