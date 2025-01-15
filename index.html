@@ -8,16 +8,17 @@
     <div class="container">
       <!-- CANVAS FOR FALLING TEXT -->
       <canvas id="matrix"></canvas>
+      <div id="matrix-overlay"></div>
       <!-- BUTTONS FOR PILLS  -->
       <div class="pill-container blue" onclick="takeBluePill()">
-        <img src="assets\bluepill.png"/>
+        <img src="assets\bluepill.png" class="pill-image"/>
       </div>
 
       <div class="pill-container red" onclick="takeRedPill()">
         <a href="red-pill-page.html"             onclick="takeRedPill()"
         >
           <img
-            src="assets\redpill.png"
+            src="assets\redpill.png" class="pill-image"
           />
         </a>
       </div>
