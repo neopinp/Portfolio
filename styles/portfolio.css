@@ -1,0 +1,58 @@
+body {
+  background-color: black;
+  color: white;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end; /* Align items to the right */
+  align-items: center;
+  padding: 20px;
+  background-color: #111; /* Optional: dark background */
+  color: white;
+}
+
+.navbar-brand {
+  margin-left: 30px; /* Space between links */
+  color: green;
+  text-decoration: none;
+}
+
+.navbar-brand:hover {
+  color: lightgreen;
+}
+
+.biography {
+  display: flex; /* Enable Flexbox for the container */
+  justify-content: space-between; /* Space between left and right */
+  align-items: center; /* Vertically center them */
+  margin: 50px;
+  border: 3px solid green;
+  width: 95%;
+  height: 590px;
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#leftSide {
+  width: 50%;
+  padding: 20px;
+}
+
+#rightSide {
+  width: 50%;
+  display: flex;
+  justify-content: center; /* Center image horizontally */
+  align-items: center; /* Center image vertically */
+  margin: 40px;
+}
+
+#pfp {
+  height: 400px;
+  width: auto;
+  border-radius: 10px; /* Optional: rounded corners */
+  margin-left: 50px;
+}

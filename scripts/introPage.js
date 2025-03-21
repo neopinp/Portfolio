@@ -61,6 +61,7 @@ function takeBluePill() {
   });
 }
 function takeRedPill() {
+  
   // Add functionality for portfolio navigation if needed
 }
 
