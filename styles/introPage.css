@@ -2,6 +2,8 @@ body {
   margin: 0;
   overflow: hidden;
   background: black;
+  font-family: "Roboto Mono", monospace;
+
 }
 /* CONTAINS BOTH CANVAS AND BUTTONS */
 .container {

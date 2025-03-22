@@ -1,0 +1,134 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: "Roboto Mono", monospace;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #111;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid green;
+}
+
+.header nav a {
+  margin-left: 20px;
+  color: green;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.header nav a:hover {
+  color: lightgreen;
+}
+
+/* About Section */
+.about-section {
+  padding: 50px 20px;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.about-left {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-pic {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 3px solid green;
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.7);
+}
+
+.about-right {
+  flex: 1 1 400px;
+  max-width: 600px;
+}
+
+.about-right h2 {
+  color: lightgreen;
+  margin-bottom: 15px;
+}
+
+.about-right p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.skill {
+  background-color: #111;
+  color: green;
+  border: 2px solid green;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 16px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.skill:hover {
+  background-color: green;
+  color: black;
+}
+
+/* Contact Section */
+.contact-section {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.contact-section h2 {
+  color: lightgreen;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.social-icons a {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  filter: brightness(0) saturate(100%) invert(63%) sepia(81%) saturate(2293%)
+    hue-rotate(72deg) brightness(96%) contrast(90%);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.social-icons a:hover .icon {
+  transform: scale(1.2);
+  filter: brightness(0) saturate(100%) invert(89%) sepia(6%) saturate(432%)
+    hue-rotate(60deg) brightness(115%) contrast(90%);
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #111;
+  border-top: 2px solid green;
+}
